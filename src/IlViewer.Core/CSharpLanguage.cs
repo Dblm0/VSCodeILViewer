@@ -18,7 +18,7 @@ namespace IlViewer.Core
 
         // ReSharper disable once AgentHeisenbug.FieldOfNonThreadSafeTypeInThreadSafeType
         private readonly IReadOnlyCollection<MetadataReference> _references = new[] {
-            MetadataReference.CreateFromFile(typeof(Binder).GetTypeInfo().Assembly.Location),
+            MetadataReference.CreateFromFile(typeof(Microsoft.CSharp.RuntimeBinder.Binder).GetTypeInfo().Assembly.Location),
             MetadataReference.CreateFromFile(typeof(ValueTuple<>).GetTypeInfo().Assembly.Location)
         };
 
